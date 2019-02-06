@@ -22,7 +22,6 @@ nearestInst.isOnMove = 1;
 
 if diffX > diffY {
 	// Gauche droite
-	
 	if isPlaced != 1 {
 		sprite_index = sPlayer_push;
 		
@@ -70,8 +69,55 @@ if diffX > diffY {
 				nearestInst.x += mvspeed;
 			}
 		}
-		
 	}
 } else {
+	show_debug_message( "Y player : " + string(y) ); 
+	show_debug_message( "Y caisse : " + string(nearestInst.y) ); 
+	
 	// Haut / bas
+	if isPlaced != 1 {
+		sprite_index = sPlayer_push_down;
+		
+		var sWidth = sprite_width;
+		var sHeight = sprite_height;
+ 
+		x = ( nearestInst.bbox_left + nearestInst.bbox_right ) / 2; 
+	
+		if y > nearestInst.y {	
+			y = nearestInst.bbox_bottom + (abs(sHeight) / 2);
+		
+		} else {
+			y = nearestInst.bbox_top - (sHeight / 2);
+		}
+		isPlaced = 1;
+	}
+	
+	// HAUT
+	if keyboard_check( up ) {
+		if y < nearestInst.y {
+			if !place_free( x, y - collisionSpeed ) {
+				while place_free( x, y - 1 ) {
+					y -= 1;
+					nearestInst.y -= 1;
+				}
+			} else {
+				y -= mvspeed;
+				nearestInst.y -= mvspeed;
+			}
+		}
+	}
+	// BAS
+	if keyboard_check( down ) {
+		if y > nearestInst.y {
+			if !place_free( x, y + collisionSpeed ) {
+				while place_free( x, y + 1 ) {
+					y += 1;
+					nearestInst.y += 1;
+				}
+			} else {
+				y += mvspeed;
+				nearestInst.y += mvspeed;
+			}
+		}
+	}
 }
