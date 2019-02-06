@@ -50,15 +50,32 @@
             "id": "da224d8a-fafd-497b-803e-03f5500748e9",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
+            "listItems": [
+                "\"oPlayer\"",
+                "\"oPlayer2\""
+            ],
+            "multiselect": true,
             "rangeEnabled": false,
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "",
             "varName": "linkTo",
-            "varType": 2
+            "varType": 6
+        },
+        {
+            "id": "3918ff6c-7522-4efd-bffd-eff0a02344b0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "playersToMove",
+            "varType": 1
         }
     ],
     "solid": false,

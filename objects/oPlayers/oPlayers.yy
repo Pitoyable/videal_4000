@@ -157,6 +157,20 @@
             "value": "",
             "varName": "linkTo",
             "varType": 2
+        },
+        {
+            "id": "78665252-bb4d-462a-afa9-0b5fbfb95d1d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "",
+            "varName": "actionBtn",
+            "varType": 4
         }
     ],
     "solid": false,

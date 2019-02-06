@@ -1,3 +1,9 @@
 if isOnMove == 1 {
-	moveObject( linkTo.left, linkTo.right, linkTo.up, linkTo.down );
+	moveObject();
+}
+
+if array_length_1d( linkTo ) < 1 {
+	isOnMove = 0;
+} else {
+	isOnMove = 1;
 }

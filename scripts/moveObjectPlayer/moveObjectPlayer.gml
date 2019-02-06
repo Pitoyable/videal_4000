@@ -1,7 +1,4 @@
 /// moveObject( 0, 1, 2, 3 );
-oPress_enter.visible = 0;
-oPress_enter.x = -100;
-oPress_enter.y = 100;
 
 var left = argument[0];
 var right = argument[1];
@@ -17,8 +14,15 @@ var mvspeed = 2;
 var collisionSpeed = mvspeed + 2;
 
 linkTo = nearestInst;
-nearestInst.linkTo = id;
-nearestInst.isOnMove = 1;
+var objectLinkTo = nearestInst.linkTo;
+for ( var i = 0; i < 2; i++ ) {
+	if linkTo[i] == "" {
+		linkTo[i] = id;
+		break;
+	}
+}
+
+hideActionBtn( actionBtn );
 
 if diffX > diffY {
 	// Gauche droite
@@ -70,10 +74,7 @@ if diffX > diffY {
 			}
 		}
 	}
-} else {
-	show_debug_message( "Y player : " + string(y) ); 
-	show_debug_message( "Y caisse : " + string(nearestInst.y) ); 
-	
+} else {	
 	// Haut / bas
 	if isPlaced != 1 {
 		sprite_index = sPlayer_push_down;
@@ -84,7 +85,7 @@ if diffX > diffY {
 		x = ( nearestInst.bbox_left + nearestInst.bbox_right ) / 2; 
 	
 		if y > nearestInst.y {	
-			y = nearestInst.bbox_bottom + (abs(sHeight) / 2);
+			y = nearestInst.bbox_bottom + (sHeight / 2);
 		
 		} else {
 			y = nearestInst.bbox_top - (sHeight / 2);
