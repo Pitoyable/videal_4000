@@ -36,5 +36,34 @@ if keyboard_check( right ) {
 			linkTo.x += mvspeed;
 		}
 	}
-		
+}
+
+// HAUT
+if keyboard_check( up ) {
+	if y < linkTo.y {
+		if !place_free( x, y - collisionSpeed ) {
+			while place_free( x, y - 1 ) {
+				y -= 1;
+				linkTo.y -= 1;
+			}
+		} else {
+			y -= mvspeed;
+			linkTo.y -= mvspeed;
+		}
+	}
+}
+
+// BAS
+if keyboard_check( down ) {
+	if y > linkTo.y {
+		if !place_free( x, y + collisionSpeed ) {
+			while place_free( x, y + 1 ) {
+				y += 1;
+				linkTo.y += 1;
+			}
+		} else {
+			y += mvspeed;
+			linkTo.y += mvspeed;
+		}
+	}
 }
