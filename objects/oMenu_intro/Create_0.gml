@@ -3,7 +3,7 @@ menu_y = surface_get_height(application_surface)/2;
 button_h = 32;
 
 // buttons
-button[0] = "Room1";
+button[0] = "Cave";
 button[1] = "Room dialogue";
 button[2] = "Options";
 button[3] = "Quitter";
