@@ -5,16 +5,6 @@
     "name": "oPlayer2",
     "eventList": [
         {
-            "id": "c0c9596a-9972-40a1-b8f1-dc8929151b67",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "84b616c3-07a6-4a8a-92c4-e6e78bbd43f6"
-        },
-        {
             "id": "837f7f5b-1134-4c89-978a-30fd8270073a",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -22,6 +12,26 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 98,
             "eventtype": 9,
+            "m_owner": "84b616c3-07a6-4a8a-92c4-e6e78bbd43f6"
+        },
+        {
+            "id": "98830521-fe77-4ede-9710-2d163f9007a1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "84b616c3-07a6-4a8a-92c4-e6e78bbd43f6"
+        },
+        {
+            "id": "2d598907-90cd-4ee7-84a2-6d5f5b50b60c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "84b616c3-07a6-4a8a-92c4-e6e78bbd43f6"
         }
     ],
@@ -74,6 +84,22 @@
             "objectId": "ff976c63-8b2d-4ccc-88d4-55827a829787",
             "propertyId": "78665252-bb4d-462a-afa9-0b5fbfb95d1d",
             "value": "oActionBtn2"
+        },
+        {
+            "id": "6cb4a4f1-75c5-4466-9134-75f8283a5d44",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ff976c63-8b2d-4ccc-88d4-55827a829787",
+            "propertyId": "15ca4fad-109d-4b94-8e6f-1ef9febcb1dc",
+            "value": "vk_space"
+        },
+        {
+            "id": "ee459b5a-c9c1-4dbf-b4c7-4edd5df29328",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ff976c63-8b2d-4ccc-88d4-55827a829787",
+            "propertyId": "b9fec5f3-afb6-4059-885b-90a902c1f01d",
+            "value": "vk_lshift"
         }
     ],
     "parentObjectId": "ff976c63-8b2d-4ccc-88d4-55827a829787",

@@ -36,6 +36,20 @@
             "value": "-1",
             "varName": "depth",
             "varType": 0
+        },
+        {
+            "id": "310b5f4c-bf16-4f16-9b70-a653b9aaebc6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "",
+            "varName": "actionToCall",
+            "varType": 4
         }
     ],
     "solid": false,

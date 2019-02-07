@@ -1,4 +1,11 @@
-/// moveObject();
+/// moveObject( player );
+with (player) {
+	var input_left = left;
+	var input_right = right;
+	var input_up = up;
+	var input_down = down;
+}
+
 var left = linkTo[0].left;
 var right = linkTo[0].right;
 var up = linkTo[0].up;
@@ -10,7 +17,7 @@ var collisionSpeed = mvspeed + 2;
 var diffX = abs( x - linkTo[0].x );
 var diffY = abs( y - linkTo[0].y );
 
-if playersToMove == 2 && array_length_1d( linkTo ) < 2 {
+if array_length_1d( linkTo ) < playersToMove {
 	return;
 } else {
 	if diffX > diffY {
@@ -72,9 +79,6 @@ if playersToMove == 2 && array_length_1d( linkTo ) < 2 {
 					linkTo.y += mvspeed;
 				}
 			}
-		}	
+		}
 	}
 }
-
-
-
