@@ -1,14 +1,14 @@
 // canPlayerAction()
 // Le personnage peut il intéragir avec son environnement ?
 if distance_to_object( oInteract ) < 15 {
-	var nearestInst = instance_nearest(x, y, oMovable );
+	var aObj = instance_nearest(x, y, oMovable );
 	
-	if linkTo == "" && movingObject == 0
+	if linkTo == ""
 	{
-		var canObjMove = canObjectMove( nearestInst ); 
+		var canObjMove = canObjectMove( aObj ); 
 		
 		if canObjMove == true {
-			return nearestInst;
+			return aObj;
 		}
 	}
 }

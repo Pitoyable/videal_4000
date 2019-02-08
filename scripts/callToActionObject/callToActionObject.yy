@@ -1,8 +1,8 @@
 {
-    "id": "b1e3fd18-6577-43c6-b8b6-e5037e84c9e7",
+    "id": "8e1ec9f1-e7ec-4252-9d1e-f38e2f3f3749",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "canPlayerAction",
+    "name": "callToActionObject",
     "IsCompatibility": false,
     "IsDnD": false
 }
