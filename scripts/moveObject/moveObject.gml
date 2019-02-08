@@ -1,12 +1,24 @@
 /// moveObject( player );
-with (player) {
-	var input_left = left;
-	var input_right = right;
-	var input_up = up;
-	var input_down = down;
+var player = argument[0];
+var playerNumber = player.playerNumber;
+
+playersLinked[playerNumber, 0] = player;
+playersLinked[playerNumber, 1] = playerNumber;
+
+player.linkTo = id;
+
+var playersLinkedNumber = 0;
+	
+for ( var i = 0; i < 2; i++ ) {
+	if ( playersLinked[i, 0] != 0 ) {
+		playersLinkedNumber++;
+	}
 }
 
-var left = linkTo[0].left;
+if playersLinkedNumber == playersToMove {
+	
+}
+/*var left = linkTo[0].left;
 var right = linkTo[0].right;
 var up = linkTo[0].up;
 var down = linkTo[0].down;

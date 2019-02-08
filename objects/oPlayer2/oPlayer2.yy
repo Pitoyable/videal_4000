@@ -100,6 +100,14 @@
             "objectId": "ff976c63-8b2d-4ccc-88d4-55827a829787",
             "propertyId": "b9fec5f3-afb6-4059-885b-90a902c1f01d",
             "value": "vk_lshift"
+        },
+        {
+            "id": "fd97c910-9d81-484d-ac91-63eeb4cb7a7a",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "ff976c63-8b2d-4ccc-88d4-55827a829787",
+            "propertyId": "65f13527-ab4c-478b-a50b-5f5d70455905",
+            "value": "1"
         }
     ],
     "parentObjectId": "ff976c63-8b2d-4ccc-88d4-55827a829787",
