@@ -58,7 +58,7 @@ with(_textbox){
 	creator		= _creator;
 	effects		= _effects;
 	text_speed	= _speed;
-	type		= _type;
+	type	    = _type;
 	text		= _text;
 	nextline	= _nextline;
 	executeScript = _script;

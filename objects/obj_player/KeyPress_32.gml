@@ -1,1 +1,1 @@
-create_dialogue("Just a little monologue.", -1);
+create_dialogue("Il fait sombre ici.", -1);

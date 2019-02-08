@@ -15,10 +15,11 @@
         "24ea9cb3-836e-4274-b1dd-d0642b958409",
         "97bbdae7-61eb-44b4-9012-ecb778c2bb46",
         "6f27a470-b9b6-4a45-b488-a608a0485417",
-        "f19b1ca1-af1a-4523-8af1-38695cb3bbce"
+        "f19b1ca1-af1a-4523-8af1-38695cb3bbce",
+        "432a2f98-c24b-4148-b730-e46818956968"
     ],
     "filterType": "GMSprite",
-    "folderName": "FC_DialogueSystem",
+    "folderName": "CV_Dialogue",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

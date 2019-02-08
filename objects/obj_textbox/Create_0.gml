@@ -21,7 +21,7 @@ choice_snd_effect	= snd_moveselect;
 select_snd_effect	= snd_select;
 
 default_col			= c_white;
-choice_col			= c_yellow;
+choice_col			= c_green;
 select_col			= c_orange;
 name_col			= c_orange;
 

@@ -7,52 +7,27 @@ switch(choice_variable){
 	#region First Dialogue
 		//Line 0
 		var i = 0;
-		myText[i]		= "You can run a script after any line of dialogue! Let's make an emote to the left.";
+		myText[i]		= "Fais attention, elle n'est pas loin...";
 		mySpeaker[i]	= id;
 		myScripts[i]	= [create_instance_layer, 170,120,"Instances",obj_emote];
 		
 		//Line 1
 		i++;
-		myText[i]		= "You can even have it depend on player choice. Which object should I make?";
+		myText[i]		= "Je pense qu'il faut qu'on s'en aille au plus vite";
 		mySpeaker[i]	= id;
 		
 		//Line 2
 		i++;
-		myText[i]		= ["An emote", "Another you!"];
-		myTypes[i]		= 1;
+		myText[i]		= ["Oui, cet endroit me file les chocottes.."];
 		mySpeaker[i]	= obj_player;
-		myScripts[i]	= [[create_instance_layer, 170,120,"Instances",obj_emote], [create_instance_layer, 170,120,"Instances",obj_examplechar]];
-		myNextLine[i]	= [0,0];
 		
 		//Line 3
 		i++;
-		myText[i]		= "Pretty cool, right? Now, let's get back to our conversation.";
+		myText[i]		= "La porte de la cave est verouillée mais je pense qu'on peut trouver quelquechose pour l'ouvrir";
 		mySpeaker[i]	= id;
-		
-		//Line 4
-		i++;
-		myText[i]		= "Looky here, green hood.";
-		myEffects[i]	= [13,1, 18,0];
-		mySpeaker[i]	= id;
-		myTextCol[i]	= [13, c_lime, 18, c_white];
 
-		//Line 5
-		i++;
-		myText[i]		= "We both know blue is the best colour.";
-		myEmotion[i]	= 1;
-		myEmote[i]		= 0;
-		mySpeaker[i]	= id;
-		myTextCol[i]	= [14, c_aqua, 18, c_white];
 
-		//Line 6
-		i++;
-		myText[i]		= "Say it... or else.";
-		myTextSpeed[i]	= [1,0.5, 10,0.1];
-		myEmotion[i]	= 0;
-		myEmote[i]		= 4;
-		mySpeaker[i]	= id;
-		myTextCol[i]	= [11, c_red, 18, c_white];
-
+/*
 		//Line 7
 		i++;
 		myText[i]		= ["(sarcastically) Blue is the best colour.", "Green is the best colour."];
@@ -76,6 +51,8 @@ switch(choice_variable){
 		myEmotion[i]	= 2;
 		myEmote[i]		= 9;
 		mySpeaker[i]	= id;
+		
+*/
 		#endregion
 	break;
 	
