@@ -1,7 +1,3 @@
-if isOnMove == 1 {
-	moveObject();
-}
-
 var playersLinkedNumber = 0;
 	
 for ( var i = 0; i < 2; i++ ) {
