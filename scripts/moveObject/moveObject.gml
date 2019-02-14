@@ -1,84 +1,76 @@
 /// moveObject( player );
-with (player) {
-	var input_left = left;
-	var input_right = right;
-	var input_up = up;
-	var input_down = down;
+var player = argument[0];
+var playerNumber = player.playerNumber;
+
+playersLinked[playerNumber, 0] = player;
+
+player.linkTo = id;
+
+var playersLinkedNumber = 0;
+	
+for ( var i = 0; i < 2; i++ ) {
+	if ( playersLinked[i, 0] != 0 ) {
+		playersLinkedNumber++;
+	}
 }
 
-var left = linkTo[0].left;
-var right = linkTo[0].right;
-var up = linkTo[0].up;
-var down = linkTo[0].down;
+placePlayerToObject( id, player );
 
-var mvspeed = 2;
-var collisionSpeed = mvspeed + 2;
-
-var diffX = abs( x - linkTo[0].x );
-var diffY = abs( y - linkTo[0].y );
-
-if array_length_1d( linkTo ) < playersToMove {
-	return;
-} else {
-	if diffX > diffY {
-		// GAUCHE
-		if keyboard_check( left ) {
-			if x < linkTo.x {
-				if !place_free( x - collisionSpeed, y ) {
-					while place_free( x - 1, y ) {
-						x -= 1;
-						linkTo.x -= 1;
-					}
-				} else {
-					x -= mvspeed;
-					linkTo.x -= mvspeed;
-				}
+// Si on a le nombre nécessaire de joueur pour bouger
+if playersLinkedNumber == playersToMove {
+	var left = player.left;
+	var right = player.right;
+	var up = player.up;
+	var down = player.down;
+	
+	show_debug_message( left );
+	show_debug_message( right );
+	
+	var diffX = abs( x - player.x );
+	var diffY = abs( y - player.y );
+	
+	// Si besoin que d'un joueur pour bouger
+	if playersToMove == 1 {
+		
+		// Gauche Droite
+		if diffX > diffY { 
+			show_debug_message( "gauche droite" );
+			if keyboard_check( left ) || keyboard_check( right ) {
+				// Bouge l'object ainsi que le joueur
+				show_debug_message( "1 seul gauche ou droite" );
+			} 
+		} else { // Haut Bas
+			show_debug_message( "haut bas" );
+			if keyboard_check( up ) || keyboard_check( down ) {
+				// Bouge l'object ainsi que le joueur
+				show_debug_message( "1 seul haut ou bas" );
+			} 
+		}
+	} else if playersToMove == 2 { // S'il faut deux persos pour le faire bouger
+		var player2;
+		
+		for ( var j = 0; j < 2; j++ ) {
+			if j != playerNumber {
+				player2 = playersLinked[j, 0];
 			}
 		}
-
-		// DROITE
-		if keyboard_check( right ) {
-			if x > linkTo.x {
-				if !place_free( x + collisionSpeed, y ) {
-					while place_free( x + 1, y ) {
-						x += 1;
-						linkTo.x += 1;
-					}
-				} else {
-					x += mvspeed;
-					linkTo.x += mvspeed;
-				}
+		
+		var left2 = player2.left;
+		var right2 = player2.right;
+		var up2 = player2.up;
+		var down2 = player2.down;
+		
+		 // Si les deux personnages sont au même endroit
+		 // A droite ou gauche
+		if player2.x == player.x {
+			if ( keyboard_check( left ) && keyboard_check( left2 ) ) || ( keyboard_check( right ) && keyboard_check( right2 ) ) {
+				// bouge l'object ainsi que les deux persos gauche ou droite
 			}
-		}
-	} else {
-		// HAUT
-		if keyboard_check( up ) {
-			if y < linkTo.y {
-				if !place_free( x, y - collisionSpeed ) {
-					while place_free( x, y - 1 ) {
-						y -= 1;
-						linkTo.y -= 1;
-					}
-				} else {
-					y -= mvspeed;
-					linkTo.y -= mvspeed;
-				}
-			}
-		}
-
-		// BAS
-		if keyboard_check( down ) {
-			if y > linkTo.y {
-				if !place_free( x, y + collisionSpeed ) {
-					while place_free( x, y + 1 ) {
-						y += 1;
-						linkTo.y += 1;
-					}
-				} else {
-					y += mvspeed;
-					linkTo.y += mvspeed;
-				}
+		} else if player2.y == player.y { // Si les deux persos sont au même endroit haut ou bas
+			if ( keyboard_check( up ) && keyboard_check( up2 ) ) || ( keyboard_check( down ) && keyboard_check( down2 ) ) {
+				// bouge l'object ainsi que les deux persos gauche ou droite
 			}
 		}
 	}
+
 }

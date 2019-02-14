@@ -209,6 +209,20 @@
             "value": "",
             "varName": "runKey",
             "varType": 4
+        },
+        {
+            "id": "65f13527-ab4c-478b-a50b-5f5d70455905",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "playerNumber",
+            "varType": 1
         }
     ],
     "solid": false,

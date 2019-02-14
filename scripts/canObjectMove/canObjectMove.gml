@@ -2,9 +2,15 @@
 var inst = argument[0];
 
 with (inst) {
-	var objLinkTo = linkTo;
-	var nbrLinkTo = array_length_1d( objLinkTo );
-
-	if nbrLinkTo < playersToMove { return true }
+	var objLinkTo = playersLinked;
+	var playersLinkedNumber = 0;
+	
+	for ( var i = 0; i < 2; i++ ) {
+		if ( objLinkTo[i, 0] != 0 ) {
+			playersLinkedNumber++;
+		}
+	}
+	
+	if playersLinkedNumber < playersToMove { return true }
 	else { return false }
 }

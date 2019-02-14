@@ -1,8 +1,12 @@
-if isOnMove == 1 {
-	moveObject();
+var playersLinkedNumber = 0;
+	
+for ( var i = 0; i < 2; i++ ) {
+	if ( playersLinked[i, 0] != 0 ) {
+		playersLinkedNumber++;
+	}
 }
 
-if array_length_1d( linkTo ) < 1 {
+if playersLinkedNumber == 0 {
 	isOnMove = 0;
 } else {
 	isOnMove = 1;

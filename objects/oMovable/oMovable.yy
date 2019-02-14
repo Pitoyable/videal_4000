@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "83aeefad-bf97-4a4d-882b-21beac6a0d76"
+        },
+        {
+            "id": "be4cd6c4-bae3-4180-ae4d-fbaea6363097",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "83aeefad-bf97-4a4d-882b-21beac6a0d76"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -54,23 +64,6 @@
             "value": "0",
             "varName": "isOnMove",
             "varType": 3
-        },
-        {
-            "id": "da224d8a-fafd-497b-803e-03f5500748e9",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": [
-                "\"oPlayer\"",
-                "\"oPlayer2\""
-            ],
-            "multiselect": true,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "",
-            "varName": "linkTo",
-            "varType": 6
         },
         {
             "id": "3918ff6c-7522-4efd-bffd-eff0a02344b0",
