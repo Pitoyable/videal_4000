@@ -11,3 +11,4 @@ if playersLinkedNumber == 0 {
 } else {
 	isOnMove = 1;
 }
+ 
