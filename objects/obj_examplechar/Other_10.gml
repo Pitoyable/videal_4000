@@ -4,12 +4,11 @@ reset_dialogue_defaults();
 
 switch(choice_variable){
 	case -1:
-	#region First Dialogue
+	#region Dialogue avec le premier pnj
 		//Line 0
 		var i = 0;
 		myText[i]		= "Fais attention, elle n'est pas loin...";
 		mySpeaker[i]	= id;
-		myScripts[i]	= [create_instance_layer, 170,120,"Instances",obj_emote];
 		
 		//Line 1
 		i++;
@@ -18,17 +17,28 @@ switch(choice_variable){
 		
 		//Line 2
 		i++;
-		myText[i]		= ["Oui, cet endroit me file les chocottes.."];
+		myText[i]		= "Oui, cet endroit me file les chocottes..";
 		mySpeaker[i]	= obj_player;
 		
 		//Line 3
 		i++;
-		myText[i]		= "La porte de la cave est verouillée mais je pense qu'on peut trouver quelquechose pour l'ouvrir";
+		myText[i]		= "La porte de la cave est verouillee, ";
 		mySpeaker[i]	= id;
 
+		i++;
+		myText[i]		= "On doit pouvoir trouver quelque-chose pour l'ouvrir";
+		mySpeaker[i]	= id;
+
+		i++;
+		myText[i]		= "Allons de ce cote !";
+		mySpeaker[i]	= obj_player;
+	//	myScripts[i]	= [[change_variable, id, "choice_variable", "blue"], [change_variable, id, "choice_variable", "green"]];
+	// -> donne à CHOICE_VARIABLE une nouvelle valeur pour continuer avec un autre dialogue
+		
+	#endregion
 
 /*
-		//Line 7
+		//Line Choice
 		i++;
 		myText[i]		= ["(sarcastically) Blue is the best colour.", "Green is the best colour."];
 		myTypes[i]		= 1;
@@ -36,7 +46,7 @@ switch(choice_variable){
 		myScripts[i]	= [[change_variable, id, "choice_variable", "blue"], [change_variable, id, "choice_variable", "green"]];
 		mySpeaker[i]	= obj_player;
 
-		//Line 8
+		//Line Answer 1
 		i++;
 		myText[i]		= "Exactly! Thank you!";
 		myEmotion[i]	= 0;
@@ -44,7 +54,7 @@ switch(choice_variable){
 		myNextLine[i]	= -1;
 		mySpeaker[i]	= id;
 
-		//Line 9
+		//Line Answer 2
 		i++;
 		myText[i]		= "Nooooooooooooooooooooooo!";
 		myTextSpeed[i]	= [1,1, 6,0.3, 10,1];
@@ -53,6 +63,7 @@ switch(choice_variable){
 		mySpeaker[i]	= id;
 		
 */
+/*
 		#endregion
 	break;
 	
@@ -88,4 +99,5 @@ switch(choice_variable){
 		//choice_variable	= -1;
 	#endregion
 	break;
+*/
 }

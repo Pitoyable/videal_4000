@@ -16,4 +16,8 @@ if isOnMove == 1 {
 		isOnMove = 0;
 	}
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> bfbbbe4688b03271ee65ff6a570537a9c0b2cd08
