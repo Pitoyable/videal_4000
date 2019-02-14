@@ -5,6 +5,8 @@ var thePlayer = argument[1];
 var diffX = abs( thePlayer.x - theObject.x );
 var diffY = abs( thePlayer.y - theObject.y );
 
+var playersLinkedNumber = 0;
+	
 with ( thePlayer ) {
 	var sWidth = sprite_width;
 	var sHeight = sprite_height;

@@ -22,6 +22,7 @@ if movingObject == 1 {
 				show_debug_message( "Activé" );
 				callToActionObject( id, canAction );
 				movingObject = 1;
+				hideActionBtn( actionBtn );
 			}
 		} else {
 			hideActionBtn( actionBtn );

@@ -1,7 +1,7 @@
 // stopActionPlayer()
 movingObject = 0;
 isPlaced = 0;
-
+solid = 1;
 linkTo.playersLinked[ playerNumber, 0 ] = 0;
 linkTo = "";
 
