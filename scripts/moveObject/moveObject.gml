@@ -18,6 +18,7 @@ placePlayerToObject( id, player );
 
 // Si on a le nombre nécessaire de joueur pour bouger
 if playersLinkedNumber == playersToMove {
+	
 	var left = player.left;
 	var right = player.right;
 	var up = player.up;

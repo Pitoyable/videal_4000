@@ -1,13 +1,19 @@
-var playersLinkedNumber = 0;
+if isOnMove == 1 {
 	
-for ( var i = 0; i < 2; i++ ) {
-	if ( playersLinked[i, 0] != 0 ) {
-		playersLinkedNumber++;
+	
+} else {
+	var playersLinkedNumber = 0;
+	
+	for ( var i = 0; i < 2; i++ ) {
+		if ( playersLinked[i, 0] != 0 ) {
+			playersLinkedNumber++;
+		}
+	}
+
+	if playersLinkedNumber == playersToMove {
+		isOnMove = 1;
+	} else {
+		isOnMove = 0;
 	}
 }
 
-if playersLinkedNumber == 0 {
-	isOnMove = 0;
-} else {
-	isOnMove = 1;
-}
