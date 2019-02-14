@@ -1,0 +1,1 @@
+create_dialogue("Il fait sombre ici.", -1);
