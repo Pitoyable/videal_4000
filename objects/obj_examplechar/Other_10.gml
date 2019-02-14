@@ -9,7 +9,7 @@ switch(choice_variable){
 		var i = 0;
 		myText[i]		= "Fais attention, elle n'est pas loin...";
 		mySpeaker[i]	= id;
-		myScripts[i]	= [create_instance_layer, 170,120,"Instances",obj_emote];
+	// myScripts[i]	= [create_instance_layer, 170,120,"Instances",obj_emote];
 		
 		//Line 1
 		i++;
@@ -18,14 +18,21 @@ switch(choice_variable){
 		
 		//Line 2
 		i++;
-		myText[i]		= ["Oui, cet endroit me file les chocottes.."];
+		myText[i]		= "Oui, cet endroit me file les chocottes..";
 		mySpeaker[i]	= obj_player;
 		
 		//Line 3
 		i++;
-		myText[i]		= "La porte de la cave est verouillée mais je pense qu'on peut trouver quelquechose pour l'ouvrir";
+		myText[i]		= "La porte de la cave est verouillee, ";
 		mySpeaker[i]	= id;
 
+		i++;
+		myText[i]		= "On doit pouvoir trouver quelque-chose pour l'ouvrir";
+		mySpeaker[i]	= id;
+
+		i++;
+		myText[i]		= "Allons de ce cote !";
+		mySpeaker[i]	= obj_player;
 
 /*
 		//Line 7
@@ -53,6 +60,7 @@ switch(choice_variable){
 		mySpeaker[i]	= id;
 		
 */
+/*
 		#endregion
 	break;
 	
@@ -88,4 +96,5 @@ switch(choice_variable){
 		//choice_variable	= -1;
 	#endregion
 	break;
+*/
 }
