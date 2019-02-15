@@ -17,6 +17,13 @@ var offsetSpriteUp = sprite_height - ( bbox_bottom - bbox_top );
 if !place_free( x, y - offsetSpriteUp ) {
 	depth = -100;
 }
+
+// Pour les personnages se passent l'un devant l'autre
+var nextPlayer = instance_place( x, y - offsetSpriteUp, oPlayers );
+
+if nextPlayer != noone {
+	depth =  nextPlayer.depth - 1;
+}
 // ----------
 
 // Déplacements et collisions 

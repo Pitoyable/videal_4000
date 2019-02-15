@@ -32,10 +32,12 @@ with ( thePlayer ) {
 			x = ( theObject.bbox_left + theObject.bbox_right ) / 2;
 
 			if y > theObject.y {
-				y = theObject.bbox_bottom + (sHeight / 2);
+				//y = theObject.bbox_bottom + (sHeight / 2);
+				y = theObject.bbox_bottom;
 
 			} else {
-				y = theObject.bbox_top - (sHeight / 2);
+				//y = theObject.bbox_top - (sHeight / 2);
+				y = theObject.bbox_top;
 			}
 			isPlaced = 1;
 		}

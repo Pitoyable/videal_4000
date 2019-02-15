@@ -2,6 +2,8 @@ var canAction = canPlayerAction();
 
 if movingObject == 1 {
  
+	solid = 0;
+	
 	if keyboard_check_pressed( actionKey ) {
 		show_debug_message( "Désactivé" );
 		stopActionPlayer();

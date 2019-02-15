@@ -37,9 +37,6 @@ if isOnMove == 1 {
 	
 	// Si besoin que d'un joueur pour bouger
 	if playersToMove == 1 {
-		
-		player.solid = 1;
-		
 		// Gauche Droite
 		if diffX > diffY { 
 			show_debug_message( "gauche droite" );
